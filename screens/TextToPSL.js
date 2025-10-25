@@ -12,7 +12,7 @@ const TextToPSL = () => {
   const handleConvert = async () => {
     if (!inputText.trim()) return;
     try {
-      const response = await axios.post('http://192.168.100.176:8006/text-to-psl', { text: inputText });
+      const response = await axios.post('http://192.168.101.20:8006/text-to-psl', { text: inputText });
       setPslOutput(response.data.translation || []);
     } catch (err) {
       console.error('API Error:', err.message);

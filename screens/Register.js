@@ -4,7 +4,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import axios from 'axios';
 
 const { height } = Dimensions.get('window');
-const API_URL = "http://192.168.100.176:6000";
+const API_URL = "http://192.168.101.20:6000";
 
 export default function Register({ navigation }) {
   const [email, setEmail] = useState('');

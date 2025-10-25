@@ -334,7 +334,7 @@ async def text_to_psl(data: dict = Body(...)):
                 for ext in [".png", ".jpg"]:
                     img_path = os.path.join(PSL_IMAGES_FOLDER, f"{predicted_label}{ext}")
                     if os.path.exists(img_path):
-                        img_url = f"http://192.168.100.176:8006/psl_images/{predicted_label}{ext}"
+                        img_url = f"http://192.168.101.20:8006/psl_images/{predicted_label}{ext}"
                         break
 
                 output.append({
